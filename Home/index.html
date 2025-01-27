@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Home/index.css">
+    <title>Home</title>
+</head>
+<body>
+    <section class="aside-section">
+            <div class="logo-div">
+                <img src="../Home/img/RECIPE.png" alt="imgs">
+            </div>
+            <div class="page-container">
+                <ul>
+                    <li><a href="../Home/index.html">Home</a></li>
+                    <li><a href="../Home/favoritePage/favorite.html">Favorite</a></li>
+                    <li><a href="../Home/RecipePage/myRecipe.html">My Recipe</a></li>
+                </ul>
+            </div>
+    </section>
+    
+    <section class="nav-main-section">
+        <nav>
+            <ul>
+                <li><img src="../Home/img/Home.png" alt="img"></li>
+                <li><h2>HOME</h2></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="filtering">
+                <select name="filter" id="Filter">
+                    <option value="Filter" disabled selected hidden>Filter</option>
+                    <option value="appetizer">by Appetizer</option>
+                    <option value="breakfast">by Breakfast</option>
+                    <option value="dessert">by Desserts</option>
+                    <option value="mainCourse">by Main Course</option>
+                    <option value="sideDishes">by Side Dishes</option>
+                </select>
+                <button class="removeFilter">X</button>
+            </div>
+            <div class="recipe-container">
+                <div class="appetizer">Appetizer</div>
+                <div class="appetizer">Appetizer</div>
+                <div class="appetizer">Appetizer</div>
+                <div class="mainCourse">main course</div>
+                <div class="mainCourse">main course</div>
+                <div class="mainCourse">main course</div>
+                <div class="dessert">dessert</div>
+                <div class="dessert">dessert</div>
+                <div class="dessert">dessert</div>
+            </div>
+            
+        </main>
+    </section>
+
+<script src="filter.js"></script>
+</body>
+</html>

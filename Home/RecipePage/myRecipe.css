@@ -1,0 +1,263 @@
+main {
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px red; */
+    width: 100%;
+    height: 93%;
+    /* gap: 20px; */
+}
+
+.bodyContent {
+    height: 95%;
+    /* border: solid 1px black; */
+    display: flex;
+    /* flex-direction: column; */
+}
+
+
+h1 {
+    position: relative;
+}
+.add-menu-container {
+    border: solid 1px black;
+    border-width: 0px 1px 0px 0px;
+     /* background-color: hsl(0, 0%, 10%); */
+    padding: 20px;
+    width: 20%;
+    height: 75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: auto;
+}
+.input-container {
+    /* border: solid 1px black; */
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input-container button {
+    height: 70px;
+
+}
+.add-menu-container button {
+    padding: 20px;
+    width: 100%;
+}
+
+.input-container form {
+    display: grid;
+    /* flex-direction: column; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        "h1 h1"
+        "f1 f1"
+        "f2 b1"
+        "f3 b2";
+    gap: 10px;
+}
+.input-container form h1 {
+    grid-area: h1;
+}
+
+#menu-input {
+    grid-area: f1;
+}
+
+#menu-ingredient {
+    grid-area: f2;
+}
+
+.input-container form input:nth-child(3) {
+    grid-area: f3;
+}
+
+#menu-ingredient button {
+    grid-area: b1;
+}
+
+.input-container form input:nth-child(3) button {
+    grid-area: b3;
+}
+
+
+.input-container form input {
+    padding: 20px;
+   
+}
+
+
+.display-input button {
+    visibility: hidden;
+}
+
+.ingredients-list {
+    /* border: solid 1px blue;  */
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px   ;
+    font-weight: bold;
+}
+
+.ingredients-list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ingredients-list ul li {
+    list-style: disc;
+}
+
+.instruction-list {
+    /* border: solid 1px green; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px   ;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.instruction-list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.instruction-list ul li {
+    list-style: disc;
+}
+
+.input-container {
+    visibility: hidden;
+}
+
+#save-recipe-btn {
+    padding: 20px;
+}
+
+#my-menu-container {
+    /* border: solid 1px black;     */
+} 
+
+#my-menu-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+#my-menu-container li {
+    padding: 20px;
+    border: solid 1px black;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-btn,
+.delete-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#recipe-details {
+    position: absolute;
+    padding: 20px;
+    left: 28%;
+    width: 72%;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#recipe-details h1 {
+    position: relative;
+    left: 20px;
+}
+
+#recipe-details button {
+    visibility: visible;
+    position: relative;
+}
+
+.ingUl,
+.insUl {
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px black; */
+    position: relative;
+    
+}
+
+.closeBtn {
+    width: 200px;   
+    padding: 20px;
+}
+
+footer {
+    border: solid 1px black;
+    background-color: white;
+    width: 100%;
+    height: 65px;
+    /* z-index: 100; */
+}
+.ingredients-list,
+.instruction-list {
+    /* border: solid 1px black; */
+    border-radius: 5px;
+}
+ 
+
+
+.display-input {
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+
+    /* flex-direction: column; */
+    /* gap:  35%; */
+}
+
+.display-input button {
+    /* height: 50px; */
+    padding: 20px;
+}
+
+.menu-item {
+    display: flex;
+    gap: 10px;
+    
+}
+.menu-item-div {
+    /* border: solid 1px black; */
+    display: flex;
+    width: 50%;
+}
+.menu-item-h1-div {
+    /* border: solid 1px black; */
+    white-space: nowrap;      
+    overflow: hidden;         
+    text-overflow: ellipsis;  
+    max-width: 200px;
+
+}
+
+.menu-item button {
+    /* border: solid 1px black; */
+    width: 60px;
+    
+
+}

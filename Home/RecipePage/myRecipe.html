@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="myRecipe.css">
+    <title>My Recipe</title>
+</head>
+<body>
+    <section class="aside-section">
+        <div class="logo-div">
+            <img src="../img/RECIPE.png" alt="imgs">
+        </div>
+        <div class="page-container">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../favoritePage/favorite.html">Favorite</a></li>
+                <li><a href="../RecipePage/myRecipe.html">My Recipe</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="nav-main-section">
+        <nav>
+            <ul>
+                <li><h2>My Recipe</h2></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="bodyContent">
+                <div class="add-menu-container">
+                    <div class="add-menu-btn">
+                        <h1>My Menu</h1><br>
+                        <button id="add-menu-btn">Add Menu</button>
+                    </div>
+                    <div id="my-menu-container">
+                        <ul>
+    
+                        </ul>
+                    </div>
+               </div>
+    
+               <div class="input-container">
+                    <form id="add-menu-name">
+                        <h1>Add Recipe</h1>
+                        <input type="text" id="menu-input" placeholder="Menu Name">
+                        <input type="text" id="menu-ingredient" placeholder="Ingredients">
+                        <button type="submit" id="menu-ingredient-btn">add</button>
+                        <input type="text" id="menu-instruction" placeholder="Instruction">
+                        <button type="submit" id="menu-instruction-btn">add</button>
+                    </form>
+                    <div class="display-input">
+                        <div class="ingredients-list">
+                            <ul>
+                                <!-- <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li> -->
+                            </ul>
+                        </div>
+                        <div class="instruction-list">
+                            <ul>
+                                <!-- <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li> -->
+                            </ul>
+                        </div>
+                        <button id="save-recipe-btn">+</button>
+                    </div>
+               </div>
+    
+               <div id="recipe-details">
+                    
+               </div>
+            </div>
+            <footer>
+                
+            </footer>
+           
+        </main>
+    </section>
+
+<script src="addRecipe.js"></script>
+</body>
+</html>
