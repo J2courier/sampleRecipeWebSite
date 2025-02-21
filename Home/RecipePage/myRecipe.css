@@ -234,13 +234,20 @@ footer {
 .display-input button {
     /* height: 50px; */
     padding: 20px;
+    /* position: relative; */
 }
 
 .menu-item {
     display: flex;
     gap: 10px;
-    
+    height: 70px;
 }
+
+.menu-item:hover .edit-btn,
+.menu-item:hover .delete-btn {
+    visibility: visible;
+}
+
 .menu-item-div {
     /* border: solid 1px black; */
     display: flex;
@@ -258,6 +265,7 @@ footer {
 .menu-item button {
     /* border: solid 1px black; */
     width: 60px;
-    
-
+    position: relative;   
+    left: 20px; 
+    visibility: hidden;
 }

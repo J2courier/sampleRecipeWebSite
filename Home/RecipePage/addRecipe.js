@@ -88,6 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const buttonDiv = document.createElement("div");
             buttonDiv.classList.add("menu-item-div");
+            
             const editButton = document.createElement("button");
             editButton.textContent = "+";
             editButton.classList.add("edit-btn");
